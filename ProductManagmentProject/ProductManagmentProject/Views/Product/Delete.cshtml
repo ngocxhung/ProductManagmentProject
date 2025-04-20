@@ -1,0 +1,30 @@
+﻿@model ProductManagmentProject.Models.Product
+
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+}
+
+<h2 class="text-danger">Xác nhận xóa sản phẩm</h2>
+
+<div class="card shadow-sm p-4">
+    <h4>Bạn có chắc chắn muốn xóa sản phẩm này?</h4>
+    <dl class="row">
+        <dt class="col-sm-4">Tên sản phẩm:</dt>
+        <dd class="col-sm-8">@Model.ProductName</dd>
+
+        <dt class="col-sm-4">Mô tả:</dt>
+        <dd class="col-sm-8">@Model.Description</dd>
+
+        <dt class="col-sm-4">Giá:</dt>
+        <dd class="col-sm-8">@Model.Price đ</dd>
+
+        <dt class="col-sm-4">Danh mục:</dt>
+        <dd class="col-sm-8">@Model.Category.CategoryName</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" name="id" value="@Model.ProductId" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index1" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

@@ -1,0 +1,27 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Delete Product";
+}
+
+<h2>Delete Product</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@Model.ProductName</h4>
+        <p class="card-text"><strong>Description:</strong> @Model.Description</p>
+        <p class="card-text"><strong>Price:</strong> @Model.Price.ToString("C")</p>
+        <p class="card-text"><strong>Stock:</strong> @Model.Stock</p>
+        <p class="card-text"><strong>Category:</strong> @Model.Category?.CategoryName</p>
+
+        <div>
+            <label class="form-label">Product Image</label><br>
+            <img src="@Url.Content("~/" + Model.ImageUrl)" class="img-thumbnail" width="200" />
+        </div>
+
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="ProductId" />
+            <button type="submit" class="btn btn-danger mt-3">Confirm Delete</button>
+            <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+        </form>
+    </div>
+</div>

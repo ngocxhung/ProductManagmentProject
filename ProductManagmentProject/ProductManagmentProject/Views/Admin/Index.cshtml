@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProductManagmentProject.Models.Product>
+
+@{
+	ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+<h2>Admin's management'</h2>
+
+<a asp-action="Create" class="btn btn-success mb-3">Thêm sản phẩm</a>
+<a asp-action="AddUser" class="btn btn-success mb-3">Add user</a>
+<a asp-action="ListUser" class="btn btn-success mb-3">List user</a>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Tên sản phẩm</th>
+			<th>Mô tả</th>
+			<th>Giá</th>
+			<th>Tồn kho</th>
+			<th>Danh mục</th>
+			<th>Ngày tạo</th>
+			<th>Hình ảnh</th> <!-- Thêm cột hình ảnh -->
+			<th>Hành động</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>@item.ProductId</td>
+				<td>@item.ProductName</td>
+				<td>@item.Description</td>
+				<td>@item.Price đ</td>
+				<td>@item.Stock</td>
+				<td>@(item.Category != null ? item.Category.CategoryName : "Không có dữ liệu")</td>
+				<td>@(item.CreatedAt?.ToString("yyyy-MM-dd HH:mm") ?? "Không có dữ liệu")</td>
+				<td>
+					@if (!string.IsNullOrEmpty(item.ImageUrl))
+					{
+						<img src="~/@item.ImageUrl" alt="@item.ProductName" class="product-image" asp-append-version="true" />
+					}
+					else
+					{
+						<span>Không có hình ảnh</span>
+					}
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-primary">Sửa</a>
+					<a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-info">Chi tiết</a>
+					<a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-danger">Xóa</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+
+<style>
+	.product-image {
+		width: 100px; /* Điều chỉnh kích thước */
+		height: 100px;
+		object-fit: cover; /* Giữ tỉ lệ mà không méo ảnh */
+		border-radius: 5px; /* Bo góc ảnh */
+	}
+</style>

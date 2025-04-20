@@ -1,0 +1,45 @@
+﻿@model Product
+@{
+	ViewData["Title"] = "Create Product";
+}
+
+<h2>
+	Create Product
+</h2>
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+	<div class="mb-3">
+		<label asp-for="ProductName" class="form-label"> Product Name</label>
+		<input asp-for="ProductName" class="form-control" required />
+	</div>
+	<div class="mb-3">
+		<label asp-for="Description" class="form-label"> Description</label>
+		<input asp-for="Description" class="form-control" required />
+	</div>
+	<div class="mb-3">
+		<label asp-for="Price" class="form-label">Price</label>
+		<input asp-for="Price" type="number" class="form-control" required />
+	</div>
+	<div class=" mb-3">
+		<label asp-for="Stock" class="form-label">Stock</label>
+		<input asp-for="Stock" class="form-control" required" />
+	</div>
+
+	<div class=" mb-3">
+		<label asp-for="CategoryId" class="form-label">Category</label>
+		<select asp-for="CategoryId" asp-items="@(new SelectList(ViewBag.Categories,"CategoryId","CategoryName"))" class="form-select">
+			<option value="">--Select Category -- </option>
+		</select>
+	</div>
+
+	<div class="mb-3">
+		<label class="form-label">Image</label>
+		<input type="file" name="ImageFile" class="form-control" accept="image/*">
+	</div>
+
+	<button type="submit" class="btn btn-primary">Create</button>
+	<a asp-action="Index" class="btn btn-secondary">
+		Back to List
+	</a>
+	<div>
+	</div>
+</form>

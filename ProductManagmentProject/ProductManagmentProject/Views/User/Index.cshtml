@@ -1,0 +1,200 @@
+﻿@model List<ProductManagmentProject.Models.Product>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+<h2 class="mb-4">Danh sách sản phẩm</h2>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Tên sản phẩm</th>
+            <th>Mô tả</th>
+            <th>Giá</th>
+            <th>Tồn kho</th>
+            <th>Danh mục</th>
+            <th>Hình ảnh</th>
+            <th>Số lượng</th>
+            <th>Thêm vào giỏ</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr id="product-row-@product.ProductId">
+                <td>@product.ProductId</td>
+                <td>@product.ProductName</td>
+                <td>@product.Description</td>
+                <td>@product.Price.ToString("N0") đ</td>
+                <td class="stock" data-product-id="@product.ProductId">@product.Stock</td>
+                <td>@(product.Category != null ? product.Category.CategoryName : "Không có dữ liệu")</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl" alt="@product.ProductName" width="50" height="50" class="rounded">
+                    }
+                    else
+                    {
+                        <span>Không có ảnh</span>
+                    }
+                </td>
+                <td>
+                    <input type="number" value="1" min="1" class="form-control quantity-input" data-product-id="@product.ProductId" />
+                </td>
+                <td>
+                    <button class="btn btn-primary add-to-cart" data-product-id="@product.ProductId">Thêm</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3 class="mt-4">🛒 Giỏ hàng</h3>
+<table class="table table-bordered" id="cartTable">
+    <thead class="table-success">
+        <tr>
+            <th>ID</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody id="cartBody">
+        <tr id="cartEmptyRow"><td colspan="6" class="text-center">Giỏ hàng trống</td></tr>
+    </tbody>
+</table>
+
+<!-- Phần tổng tiền + Thanh toán -->
+<div class="d-flex justify-content-between align-items-center mt-3">
+    <h4>Tổng tiền: <span id="cartTotal">0</span> đ</h4>
+    <button id="checkoutButton" class="btn btn-primary" disabled>Thanh toán</button>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".add-to-cart").click(function () {
+                var productId = $(this).data("product-id");
+                var quantity = parseInt($(".quantity-input[data-product-id='" + productId + "']").val());
+
+                $.ajax({
+                    url: "/Cart/AddToCart",
+                    type: "POST",
+                    data: { productId: productId, quantity: quantity },
+                    success: function (response) {
+                        if (response.success) {
+                            updateStock(productId, quantity);
+                            addToCartTable(response.product, quantity);
+                            updateCartTotal();
+                        } else {
+                            alert(response.message);
+                        }
+                    }
+                });
+            });
+
+            function updateStock(productId, quantity) {
+                var stockCell = $(".stock[data-product-id='" + productId + "']");
+                stockCell.text(parseInt(stockCell.text()) - quantity);
+            }
+
+            function addToCartTable(product, quantity) {
+                $("#cartEmptyRow").remove();
+                var row = $("#cartBody").find(`tr[data-product-id='${product.productId}']`);
+
+                if (row.length > 0) {
+                    var newQuantity = parseInt(row.find(".cart-quantity").text()) + quantity;
+                    row.find(".cart-quantity").text(newQuantity);
+                    row.find(".cart-total").text((product.price * newQuantity).toLocaleString() + " đ");
+                } else {
+                    var total = product.price * quantity;
+                    var newRow = `<tr data-product-id="${product.productId}">
+                        <td>${product.productId}</td>
+                        <td>${product.productName}</td>
+                        <td>${product.price.toLocaleString()} đ</td>
+                        <td class="cart-quantity">${quantity}</td>
+                        <td class="cart-total">${total.toLocaleString()} đ</td>
+                        <td><button class="btn btn-danger btn-sm remove-cart-item">Xóa</button></td>
+                    </tr>`;
+                    $("#cartBody").append(newRow);
+                }
+                updateCartTotal();
+            }
+
+            $(document).on("click", ".remove-cart-item", function () {
+                var row = $(this).closest("tr");
+                var productId = row.data("product-id");
+                var quantity = parseInt(row.find(".cart-quantity").text());
+
+                $.ajax({
+                    url: "/Cart/RemoveFromCart",
+                    type: "POST",
+                    data: { productId: productId },
+                    success: function (response) {
+                        if (response.success) {
+                            row.remove();
+                            restoreStock(productId, quantity);
+                            checkCartEmpty();
+                        } else {
+                            alert(response.message);
+                        }
+                    }
+                });
+            });
+
+            function restoreStock(productId, quantity) {
+                var stockCell = $(".stock[data-product-id='" + productId + "']");
+                stockCell.text(parseInt(stockCell.text()) + quantity);
+            }
+
+            function checkCartEmpty() {
+                if ($("#cartBody tr").length === 0) {
+                    $("#cartBody").html('<tr id="cartEmptyRow"><td colspan="6" class="text-center">Giỏ hàng trống</td></tr>');
+                    $("#cartTotal").text("0");
+                    $("#checkoutButton").prop("disabled", true);
+                } else {
+                    updateCartTotal();
+                }
+            }
+
+            function updateCartTotal() {
+                var total = 0;
+                $(".cart-total").each(function () {
+                    total += parseInt($(this).text().replace(/\D/g, ''));
+                });
+                $("#cartTotal").text(total.toLocaleString());
+                $("#checkoutButton").prop("disabled", total === 0);
+            }
+
+            $("#checkoutButton").click(function () {
+                var cartItems = [];
+                $("#cartBody tr[data-product-id]").each(function () {
+                    var productId = $(this).data("product-id");
+                    var quantity = parseInt($(this).find(".cart-quantity").text());
+                    cartItems.push({ productId: productId, quantity: quantity });
+                });
+
+                $.ajax({
+                    url: "/Cart/Checkout",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({ cartItems: cartItems, total: $("#cartTotal").text().replace(/\D/g, '') }),
+                    success: function (response) {
+                        if (response.success) {
+                            alert("Thanh toán thành công!");
+                            $("#cartBody").html('<tr id="cartEmptyRow"><td colspan="6" class="text-center">Giỏ hàng trống</td></tr>');
+                            $("#cartTotal").text("0");
+                            $("#checkoutButton").prop("disabled", true);
+                        } else {
+                            alert(response.message);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,71 @@
+﻿@model ProductManagmentProject.Models.Product
+
+@{
+    ViewData["Title"] = "Chỉnh sửa sản phẩm";
+}
+
+<h2>Chỉnh sửa sản phẩm</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="ProductId" />
+    <input type="hidden" asp-for="CreatedAt" /> <!-- Giữ nguyên ngày tạo -->
+
+    <div class="mb-3">
+        <label class="form-label">Tên sản phẩm</label>
+        <input type="text" class="form-control" asp-for="ProductName" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mô tả</label>
+        <textarea class="form-control" asp-for="Description"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Giá</label>
+        <input type="number" class="form-control" asp-for="Price" step="0.01" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tồn kho</label>
+        <input type="number" class="form-control" asp-for="Stock" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Danh mục</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "CategoryName"))">
+            <option value="">-- Chọn danh mục --</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Hình ảnh hiện tại</label>
+        <div>
+            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+            {
+                <img src="~/@Model.ImageUrl" id="previewImage" alt="Ảnh sản phẩm" width="100" height="100" />
+            }
+            else
+            {
+                <span>Không có hình ảnh</span>
+            }
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Cập nhật hình ảnh</label>
+        <input type="file" class="form-control" name="ImageFile" id="imageInput" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
+
+<script>
+    document.getElementById("imageInput").addEventListener("change", function(event) {
+        let reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById("previewImage").src = e.target.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    });
+</script>
