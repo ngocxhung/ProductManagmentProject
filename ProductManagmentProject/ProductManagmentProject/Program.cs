@@ -15,7 +15,7 @@ namespace ProductManagmentProject
 
             // Đăng ký DbContext
             builder.Services.AddDbContext<FoodManagmentContext>(option =>
-                option.UseSqlServer(builder.Configuration.GetConnectionString("DB")));
+                option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Đăng ký Session
             builder.Services.AddSession();

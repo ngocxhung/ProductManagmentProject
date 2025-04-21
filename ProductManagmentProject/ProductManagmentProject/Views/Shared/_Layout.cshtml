@@ -36,7 +36,7 @@
                         @if (HttpContextAccessor.HttpContext?.Session.GetString("UserEmail") != null)
                         {
                             <li class="nav-item">
-                                <span class="nav-link">Hello, @HttpContextAccessor.HttpContext.Session.GetString("UserEmail")</span>
+                                <span class="nav-link">Hello, <a asp-controller="User" asp-action="Profile">@HttpContextAccessor.HttpContext.Session.GetString("UserEmail")</a></span>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Auth" asp-action="Logout">Logout</a>
