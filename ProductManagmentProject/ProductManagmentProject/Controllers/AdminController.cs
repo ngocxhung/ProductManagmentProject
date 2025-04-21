@@ -193,6 +193,38 @@ namespace ProductManagmentProject.Controllers
             await _foodManagmentContext.SaveChangesAsync();
             return RedirectToAction("Index", "Admin");
         }
+        public async Task<IActionResult> MonthlySales()
+        {
+            var salesData = await _foodManagmentContext.Orders
+                .Where(o => o.OrderDate.HasValue) // Chỉ lấy các đơn hàng có ngày đặt
+                .GroupBy(o => new
+                {
+                    Year = o.OrderDate.Value.Year,
+                    Month = o.OrderDate.Value.Month
+                })
+                .Select(g => new
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    TotalSales = g.Sum(o => o.TotalAmount), // Tính tổng doanh số từ TotalAmount
+                    TopProduct = g.SelectMany(o => o.OrderDetails)
+                                  .GroupBy(od => od.ProductId)
+                                  .Select(pg => new
+                                  {
+                                      ProductId = pg.Key,
+                                      ProductName = pg.FirstOrDefault().Product.ProductName,
+                                      ImageUrl = pg.FirstOrDefault().Product.ImageUrl, // Lấy đường dẫn ảnh
+                                      TotalQuantity = pg.Sum(od => od.Quantity)
+                                  })
+                                  .OrderByDescending(pg => pg.TotalQuantity)
+                                  .FirstOrDefault() // Lấy sản phẩm bán chạy nhất
+                })
+                .OrderByDescending(s => s.Year)
+                .ThenByDescending(s => s.Month)
+                .ToListAsync();
+
+            return View(salesData);
+        }
     }
 }
 
