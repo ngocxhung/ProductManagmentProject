@@ -1,0 +1,42 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Thống kê doanh số theo tháng";
+}
+
+<h2>Thống kê doanh số theo tháng</h2>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Năm</th>
+            <th>Tháng</th>
+            <th>Doanh số (VNĐ)</th>
+            <th>Sản phẩm bán chạy nhất</th>
+            <th>Ảnh sản phẩm</th>
+            <th>Số lượng bán</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Year</td>
+                <td>@item.Month</td>
+                <td>@item.TotalSales.ToString("N0") đ</td>
+                <td>@(item.TopProduct?.ProductName ?? "Không có dữ liệu")</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.TopProduct?.ImageUrl))
+                    {
+                        <img src="@Url.Content("~/" + item.TopProduct.ImageUrl)" alt="Ảnh sản phẩm" style="width: 100px; height: auto;" />
+                    }
+                    else
+                    {
+                        <span>Không có ảnh</span>
+                    }
+                </td>
+                <td>@(item.TopProduct?.TotalQuantity ?? 0)</td>
+            </tr>
+        }
+    </tbody>
+</table>

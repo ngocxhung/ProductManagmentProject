@@ -169,7 +169,6 @@
                 $("#cartTotal").text(total.toLocaleString());
                 $("#checkoutButton").prop("disabled", total === 0);
             }
-
             $("#checkoutButton").click(function () {
                 var cartItems = [];
                 $("#cartBody tr[data-product-id]").each(function () {
@@ -179,13 +178,16 @@
                 });
 
                 $.ajax({
-                    url: "/Cart/Checkout",
+                    url: "/User/Checkout",
                     type: "POST",
                     contentType: "application/json",
                     data: JSON.stringify({ cartItems: cartItems, total: $("#cartTotal").text().replace(/\D/g, '') }),
                     success: function (response) {
                         if (response.success) {
-                            alert("Thanh toán thành công!");
+                            // Hiển thị thông báo thành công
+                            alert(response.message);
+
+                            // Reset giỏ hàng
                             $("#cartBody").html('<tr id="cartEmptyRow"><td colspan="6" class="text-center">Giỏ hàng trống</td></tr>');
                             $("#cartTotal").text("0");
                             $("#checkoutButton").prop("disabled", true);
