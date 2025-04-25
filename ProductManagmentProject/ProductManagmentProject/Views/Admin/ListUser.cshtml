@@ -1,39 +1,54 @@
 ﻿@model List<ProductManagmentProject.Models.User>
 
 @{
-    ViewData["Title"] = "Danh sách User";
+	ViewData["Title"] = "Danh sách User";
 }
 
 <h2>Danh sách User</h2>
 
 <table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>UserID</th>
-            <th>Username</th>
-            <th>FullName</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Role</th>
-            <th>Created At</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in Model)
-        {
-            <tr>
-                <td>@user.UserId</td>
-                <td>@user.Username</td>
-                <td>@user.FullName</td>
-                <td>@user.Email</td>
-                <td>@user.Phone</td>
-                <td>@user.Role</td>
-                <td>@user.CreatedAt</td>
-            </tr>
-        }
-    </tbody>
+	<thead>
+		<tr>
+			<th>UserID</th>
+			<th>Username</th>
+			<th>FullName</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Role</th>
+			<th>Created At</th>
+			<th>Status</th>
+			<th>Ghi chú</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var user in Model)
+		{
+			<tr>
+				<td>@user.UserId</td>
+				<td>@user.Username</td>
+				<td>@user.FullName</td>
+				<td>@user.Email</td>
+				<td>@user.Phone</td>
+				<td>@user.Role</td>
+				<td>@user.CreatedAt?.ToString("dd/MM/yyyy")</td>
+				<td>
+					<form asp-action="ToggleStatus" asp-route-id="@user.UserId" method="post">
+						<button type="submit" class="btn btn-sm @(user.Status == true ? "btn-danger" : "btn-success")">
+							@(user.Status == true ? "Vô hiệu hóa" : "Kích hoạt")
+						</button>
+					</form>
 
-    <a asp-action="Index" class="btn btn-secondary">
-        Back to List
-    </a>
+
+				</td>
+				<td>
+					@if (ViewData["StatusError_" + user.UserId] != null)
+					{
+						<span class="text-danger">@ViewData["StatusError_" + user.UserId]</span>
+					}
+				</td>
+			</tr>
+		}
+	</tbody>
 </table>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

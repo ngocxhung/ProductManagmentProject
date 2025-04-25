@@ -1,71 +1,87 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\",
+  "WorkspaceRootPath": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\monthlysales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\admin\\monthlysales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\listuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\admin\\listuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\models\\foodmanagmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\models\\foodmanagmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\listuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\admin\\listuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\user\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\user\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\models\\foodmanagmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\models\\foodmanagmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\monthlysales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\admin\\monthlysales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MinHee\\AppData\\Local\\Temp\\Rar$DIa10348.10302.rartemp\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MinHee\\Desktop\\PE_PRN222_GivenSolution1\\Project2\\Pages\\AuthorController\\Author.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\prn222\\prn222_project_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|c:\\users\\minhee\\desktop\\gihub\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -76,97 +92,164 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "User.cs",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\User.cs",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Models\\User.cs",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\User.cs",
               "RelativeToolTip": "ProductManagmentProject\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wBkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T05:53:58.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MonthlySales.cshtml",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
-              "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
-              "RelativeToolTip": "ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAswCkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T05:52:02.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ListUser.cshtml",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\ListUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\ListUser.cshtml",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\Admin\\ListUser.cshtml",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\ListUser.cshtml",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\ListUser.cshtml",
               "RelativeToolTip": "ProductManagmentProject\\Views\\Admin\\ListUser.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAnAAAA",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-21T05:51:22.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.json",
+              "RelativeToolTip": "ProductManagmentProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T06:41:56.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Program.cs",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\Program.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Program.cs",
+              "RelativeToolTip": "ProductManagmentProject\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAApwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T06:46:04.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\Category.cs",
+              "RelativeToolTip": "ProductManagmentProject\\Models\\Category.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T10:15:21.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\Product.cs",
+              "RelativeToolTip": "ProductManagmentProject\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T10:15:11.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductManagmentProject\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAwwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T10:10:33.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "RelativeToolTip": "ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T10:09:41.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\User\\Index.cshtml",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\Index.cshtml",
               "RelativeToolTip": "ProductManagmentProject\\Views\\User\\Index.cshtml",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAswMYAAAAPAAAA",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAuwMoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-20T17:19:06.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\UserController.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\UserController.cs",
               "RelativeToolTip": "ProductManagmentProject\\Controllers\\UserController.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAgwEkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T17:18:19.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T17:18:19.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AdminController.cs",
               "RelativeToolTip": "ProductManagmentProject\\Controllers\\AdminController.cs",
               "ViewState": "AQIAAMUAAAAAAAAAAAAswOIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T17:15:56.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T17:15:56.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Properties\\launchSettings.json",
               "RelativeToolTip": "ProductManagmentProject\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -174,11 +257,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\AuthController.cs",
               "RelativeToolTip": "ProductManagmentProject\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAAwIEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,11 +269,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Index.cshtml",
               "RelativeToolTip": "ProductManagmentProject\\Views\\Admin\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -198,47 +281,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Program.cs",
-              "RelativeDocumentMoniker": "ProductManagmentProject\\Program.cs",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Program.cs",
-              "RelativeToolTip": "ProductManagmentProject\\Program.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAApwC0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T06:46:04.718Z"
+              "DocumentIndex": 11,
+              "Title": "MonthlySales.cshtml",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
+              "RelativeToolTip": "ProductManagmentProject\\Views\\Admin\\MonthlySales.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAswCkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T05:52:02.041Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.json",
-              "RelativeDocumentMoniker": "ProductManagmentProject\\appsettings.json",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.json",
-              "RelativeToolTip": "ProductManagmentProject\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T06:41:56.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "FoodManagmentContext.cs",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\FoodManagmentContext.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\FoodManagmentContext.cs",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Models\\FoodManagmentContext.cs",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\FoodManagmentContext.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Models\\FoodManagmentContext.cs",
               "RelativeToolTip": "ProductManagmentProject\\Models\\FoodManagmentContext.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACIAAAA4AAAA",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T08:32:47.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Create.cshtml",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\Admin\\Create.cshtml",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\Admin\\Create.cshtml",
               "RelativeToolTip": "ProductManagmentProject\\Views\\Admin\\Create.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -246,20 +317,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MinHee\\AppData\\Local\\Temp\\Rar$DIa10348.10302.rartemp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa10348.10302.rartemp\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\MinHee\\AppData\\Local\\Temp\\Rar$DIa10348.10302.rartemp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa10348.10302.rartemp\\MainWindow.xaml.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T08:06:33.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\CartController.cs",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\CartController.cs",
               "RelativeToolTip": "ProductManagmentProject\\Controllers\\CartController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -267,20 +340,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Author.cshtml",
               "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\PE_PRN222_GivenSolution1\\Project2\\Pages\\AuthorController\\Author.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\PE_PRN222_GivenSolution1\\Project2\\Pages\\AuthorController\\Author.cshtml",
               "ToolTip": "C:\\Users\\MinHee\\Desktop\\PE_PRN222_GivenSolution1\\Project2\\Pages\\AuthorController\\Author.cshtml",
+              "RelativeToolTip": "..\\..\\..\\PE_PRN222_GivenSolution1\\Project2\\Pages\\AuthorController\\Author.cshtml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-14T08:11:05.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ProductManagmentProject\\appsettings.Development.json",
-              "ToolTip": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\appsettings.Development.json",
               "RelativeToolTip": "ProductManagmentProject\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -294,7 +369,31 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1421,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 29,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

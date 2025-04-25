@@ -4373,19 +4373,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LDG\\.nuget\\packages\\": {}
+    "C:\\Users\\MinHee\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject.csproj",
+      "projectUniqueName": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject.csproj",
       "projectName": "ProductManagmentProject",
-      "projectPath": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject.csproj",
-      "packagesPath": "C:\\Users\\LDG\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\obj\\",
+      "projectPath": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject.csproj",
+      "packagesPath": "C:\\Users\\MinHee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MinHee\\Desktop\\Gihub\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\LDG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MinHee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4410,7 +4415,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4460,7 +4466,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
