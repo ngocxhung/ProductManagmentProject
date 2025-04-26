@@ -1,0 +1,95 @@
+﻿@model IEnumerable<ProductManagmentProject.Models.Order>
+
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+}
+
+<h2>Quản lý đơn hàng</h2>
+<partial name="_AdminNavButtons" />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã đơn hàng</th>
+            <th>Email người dùng</th>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.OrderId</td>
+                <td>@(item.User != null ? item.User.Email : "Không có dữ liệu")</td>
+                <td>@(item.OrderDate?.ToString("yyyy-MM-dd HH:mm") ?? "Không có dữ liệu")</td>
+                <td>@item.TotalAmount đ</td>
+                <td>@item.Status</td>
+                <td>
+                    <a asp-action="OrderDetail" asp-controller="Order" asp-route-id="@item.OrderId" class="btn btn-sm btn-info">Chi tiết</a>
+                    @if (item.Status == "Pending")
+                    {
+                        <button class="btn btn-sm btn-success approve-order-btn" data-order-id="@item.OrderId">Duyệt</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form id="__AjaxAntiForgeryForm" action="#" method="post">
+    @Html.AntiForgeryToken()
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            if (typeof $ === 'undefined') {
+                console.error('jQuery is not loaded');
+                return;
+            }
+            $('.approve-order-btn').click(function () {
+                var orderId = $(this).data('order-id');
+                console.log('Approve button clicked, orderId:', orderId);
+                if (!orderId || isNaN(orderId) || orderId <= 0) {
+                    Swal.fire('Lỗi!', 'ID đơn hàng không hợp lệ.', 'error');
+                    return;
+                }
+                Swal.fire({
+                    title: 'Xác nhận duyệt đơn hàng',
+                    text: 'Bạn có chắc muốn chuyển trạng thái đơn hàng này sang Approved?',
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Duyệt đơn hàng',
+                    cancelButtonText: 'Hủy'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            url: '@Url.Action("ApproveOrder", "Order")',
+                            type: 'POST',
+                            data: { id: orderId },
+                            headers: {
+                                'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                            },
+                            success: function (response) {
+                                console.log('AJAX response:', response);
+                                if (response.success) {
+                                    Swal.fire('Đã duyệt!', 'Đơn hàng đã được duyệt thành công.', 'success')
+                                        .then(() => location.reload());
+                                } else {
+                                    Swal.fire('Lỗi!', response.message, 'error');
+                                }
+                            },
+                            error: function (xhr) {
+                                console.error('AJAX error:', xhr.statusText, xhr.responseText);
+                                Swal.fire('Lỗi!', 'Không thể duyệt đơn hàng: ' + xhr.statusText, 'error');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

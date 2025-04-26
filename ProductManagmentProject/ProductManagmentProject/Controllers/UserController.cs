@@ -29,12 +29,19 @@ namespace ProductManagmentProject.Controllers
                 return Json(new { success = false, message = "Giỏ hàng trống hoặc dữ liệu không hợp lệ." });
             }
 
+            // Retrieve userId from session
+            var userIdString = _httpContextAccessor.HttpContext?.Session.GetString("UserId");
+            if (string.IsNullOrEmpty(userIdString) || !int.TryParse(userIdString, out int userId))
+            {
+                return Json(new { success = false, message = "Người dùng chưa đăng nhập." });
+            }
+
             try
             {
-                // Tạo đơn hàng mới
+                // Create a new order
                 var order = new Order
                 {
-                    UserId = 1, // Thay bằng UserId thực tế (nếu có hệ thống đăng nhập)
+                    UserId = userId, // Assign userId from session
                     OrderDate = DateTime.Now,
                     TotalAmount = request.Total,
                     Status = "Pending",
@@ -49,7 +56,7 @@ namespace ProductManagmentProject.Controllers
                     }).ToList()
                 };
 
-                // Lưu đơn hàng vào cơ sở dữ liệu
+                // Save the order to the database
                 _foodManagmentContext.Orders.Add(order);
                 await _foodManagmentContext.SaveChangesAsync();
 

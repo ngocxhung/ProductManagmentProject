@@ -6,6 +6,7 @@ wwwroot\images\coca_cola.jpg
 wwwroot\images\cr71.jpg
 wwwroot\images\pepperoni_pizza.jpg
 wwwroot\images\z6485822853065_4b832c7a7fc97e4f5c0ee4150a4cee9f.jpg
+wwwroot\js\signalr\dist\browser\signalr.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

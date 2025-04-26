@@ -604,3 +604,5 @@ C:\Users\MinHee\Desktop\Gihub\ProductManagmentProject\ProductManagmentProject\Pr
 C:\Users\MinHee\Desktop\Gihub\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\obj\Debug\net8.0\ProductManagmentProject.pdb
 C:\Users\MinHee\Desktop\Gihub\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\obj\Debug\net8.0\ProductManagmentProject.genruntimeconfig.cache
 C:\Users\MinHee\Desktop\Gihub\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\obj\Debug\net8.0\ref\ProductManagmentProject.dll
+D:\1_PRN222_BL5\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\bin\Debug\net8.0\libman.json
+D:\1_PRN222_BL5\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\obj\Debug\net8.0\ProductManagmentProject.sourcelink.json

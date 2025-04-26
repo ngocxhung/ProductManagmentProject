@@ -38,6 +38,8 @@ namespace ProductManagmentProject.Controllers
             // Lưu thông tin user vào session
             HttpContext.Session.SetString("UserEmail", user.Email);
             HttpContext.Session.SetString("UserRole", user.Role);
+            HttpContext.Session.SetString("UserId", user.UserId.ToString()); // Store userId in session
+
             switch (user.Role)
             {
                 case "Admin":
@@ -50,7 +52,6 @@ namespace ProductManagmentProject.Controllers
                     return RedirectToAction("Index", "Home");
             }
         }
-
 
         [HttpGet]
         public IActionResult ForgotPassword()
