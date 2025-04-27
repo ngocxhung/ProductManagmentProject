@@ -36,6 +36,16 @@ namespace ProductManagmentProject
 
             // Kích hoạt Session
             app.UseSession();
+            app.Use(async (context, next) =>
+            {
+                var path = context.Request.Path;
+                if (!path.StartsWithSegments("/Auth") && string.IsNullOrEmpty(context.Session.GetString("UserEmail")))
+                {
+                    context.Response.Redirect("/Auth/Login");
+                    return;
+                }
+                await next();
+            });
 
             app.UseAuthorization();
 

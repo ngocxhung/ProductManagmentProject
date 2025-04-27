@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Đăng ký tài khoản";
+}
+
+<h2>Đăng ký tài khoản</h2>
+@if (!string.IsNullOrEmpty(ViewBag.Error))
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-success">@ViewBag.Message</div>
+}
+
+<form asp-action="Register" method="post">
+    <div class="mb-3">
+        <label>Họ và tên:</label>
+        <input type="text" name="fullName" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Email:</label>
+        <input type="email" name="email" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Tên đăng nhập:</label>
+        <input type="text" name="username" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Mật khẩu:</label>
+        <input type="password" name="password" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Số điện thoại:</label>
+        <input type="text" name="phone" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng ký</button>
+    <a href="/Auth/Login" class="btn btn-secondary">Quay lại đăng nhập</a>
+</form>
