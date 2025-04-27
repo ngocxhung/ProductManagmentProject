@@ -58,6 +58,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/Auth/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +77,17 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/Order/OrderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/Order/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -94,6 +112,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/Shared/_AdminNavButtons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk5hdkJ1dHRvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,6 +127,17 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
+=======
+[D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/User/OrderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxPcmRlckRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> Stashed changes
 [D:/PRN222/prn222_project_bl5/ProductManagmentProject/ProductManagmentProject/ProductManagmentProject/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

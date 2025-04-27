@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "Hash": "OPvexXDuLRnDA3B1t4zPKjCZmDiA3Oq9wej00/n7VLo=",
+=======
+  "Hash": "bjTpH0Wu9bhzc3QFPk5y3MNVZxIvx4fXeL6ltOaA5Js=",
+>>>>>>> Stashed changes
   "Source": "ProductManagmentProject",
   "BasePath": "_content/ProductManagmentProject",
   "Mode": "Default",
@@ -207,6 +211,35 @@
       "OriginalItemSpec": "wwwroot\\images\\z6485822853065_4b832c7a7fc97e4f5c0ee4150a4cee9f.jpg"
     },
     {
+<<<<<<< Updated upstream
+      "Identity": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\js\\site.js",
+=======
+      "Identity": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+>>>>>>> Stashed changes
+      "SourceId": "ProductManagmentProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\",
+      "BasePath": "_content/ProductManagmentProject",
+<<<<<<< Updated upstream
+      "RelativePath": "js/site.js",
+=======
+      "RelativePath": "js/signalr/dist/browser/signalr.js",
+>>>>>>> Stashed changes
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+<<<<<<< Updated upstream
+=======
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
       "Identity": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\js\\site.js",
       "SourceId": "ProductManagmentProject",
       "SourceType": "Discovered",
@@ -221,6 +254,7 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+>>>>>>> Stashed changes
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"

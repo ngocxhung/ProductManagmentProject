@@ -138,5 +138,58 @@ namespace ProductManagmentProject.Controllers
                 return builder.ToString();
             }
         }
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(string fullName, string email, string username, string password, string? phone)
+        {
+            if (string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                ViewBag.Error = "Vui lòng điền đầy đủ thông tin.";
+                return View();
+            }
+
+            // Kiểm tra email hoặc username đã tồn tại
+            var existingUser = await _foodManagmentContext.Users.FirstOrDefaultAsync(u => u.Email == email || u.Username == username);
+            if (existingUser != null)
+            {
+                ViewBag.Error = "Email hoặc tên đăng nhập đã được sử dụng.";
+                return View();
+            }
+
+            // Tạo user mới
+            var newUser = new User
+            {
+                FullName = fullName,
+                Email = email,
+                Username = username,
+                PasswordHash = password,
+                Phone = phone,
+                Role = "User",
+                CreatedAt = DateTime.Now,
+                Status = true
+            };
+
+            _foodManagmentContext.Users.Add(newUser);
+
+            try
+            {
+                await _foodManagmentContext.SaveChangesAsync();
+                ViewBag.Message = "Đăng ký thành công. Vui lòng đăng nhập.";
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "An error occurred while saving the user: " + ex.Message;
+                return View();
+            }
+
+            return RedirectToAction("Login", "Auth");
+
+        }
     }
 }

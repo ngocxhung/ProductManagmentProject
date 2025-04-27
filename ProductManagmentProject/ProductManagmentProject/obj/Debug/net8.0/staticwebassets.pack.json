@@ -37,6 +37,13 @@
       "PackagePath": "staticwebassets\\images\\z6485822853065_4b832c7a7fc97e4f5c0ee4150a4cee9f.jpg"
     },
     {
+<<<<<<< Updated upstream
+=======
+      "Id": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+>>>>>>> Stashed changes
       "Id": "D:\\PRN222\\prn222_project_bl5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
