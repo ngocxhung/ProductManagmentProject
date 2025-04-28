@@ -225,6 +225,26 @@ namespace ProductManagmentProject.Controllers
 
             return View(salesData);
         }
+        public async Task<IActionResult> ToggleStatus(int id)
+        {
+            var user = await _foodManagmentContext.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            if (user.Role == "Admin")
+            {
+                ViewData["StatusError_" + id] = "Không thể thay đổi trạng thái của tài khoản Admin.";
+
+                var userList = await _foodManagmentContext.Users.ToListAsync();
+                return View("ListUser", userList); // Render lại view với lỗi
+            }
+
+            user.Status = !(user.Status ?? false);
+            _foodManagmentContext.Users.Update(user);
+            await _foodManagmentContext.SaveChangesAsync();
+            return RedirectToAction("ListUser");
+        }
     }
 }
 
