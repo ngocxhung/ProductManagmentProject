@@ -17,4 +17,8 @@
         <a asp-action="Index" asp-controller="Product" class="btn btn-primary mb-2 me-2">Danh Sách Sản Phẩm</a>
         <a asp-action="Orders" asp-controller="Order" class="btn btn-primary mb-2 me-2">Danh Sách Đơn Hàng</a>
     }
+    else if (userRole == "User")
+    {
+        <a asp-action="Index" asp-controller="Product" class="btn btn-primary mb-2 me-2">Danh Sách Sản Phẩm</a>
+    };
 </div>

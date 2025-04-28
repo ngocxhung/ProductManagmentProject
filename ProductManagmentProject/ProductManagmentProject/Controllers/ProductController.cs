@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductManagmentProject.Models; // Thay bằng namespace của bạn
@@ -92,20 +91,31 @@ public class ProductController : Controller
             .Any(p => p.ProductId == id);
     }
 
-    public async Task<IActionResult> Details(int id)
+    [HttpGet]
+    public async Task<IActionResult> Index(string searchString)
     {
-        var product = await _foodManagmentContext.Products
+        // Lấy danh sách sản phẩm và bao gồm thông tin danh mục
+        var productsQuery = _foodManagmentContext.Products
             .Include(p => p.Category)
-            .AsNoTracking()
-            .FirstOrDefaultAsync(p => p.ProductId == id);
+            .AsQueryable();
 
-        if (product == null)
+        // Nếu có từ khóa tìm kiếm, lọc sản phẩm
+        if (!string.IsNullOrEmpty(searchString))
         {
-            return NotFound();
+            var loweredSearchString = searchString.ToLower();
+            productsQuery = productsQuery
+                .Where(p => p.ProductName.ToLower().Contains(loweredSearchString));
         }
 
-        return View(product);
+        // Lấy danh sách sản phẩm đã lọc (hoặc toàn bộ nếu không có từ khóa)
+        var products = await productsQuery.ToListAsync();
+
+        // Truyền từ khóa tìm kiếm vào ViewBag để hiển thị lại trên giao diện
+        ViewBag.SearchString = searchString;
+
+        return View(products);
     }
+
 
     // Hiển thị trang xác nhận xóa sản phẩm
     //public async Task<IActionResult> Delete(int id)
