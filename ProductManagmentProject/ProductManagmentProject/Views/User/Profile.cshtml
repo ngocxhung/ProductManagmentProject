@@ -33,7 +33,8 @@
 @if (Model.Orders.Any())
 {
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered table-hover"
+               id="orderTable">
             <thead class="table-light">
                 <tr>
                     <th>Mã đơn hàng</th>
@@ -46,11 +47,11 @@
             <tbody>
                 @foreach (var order in Model.Orders)
                 {
-                    <tr>
+                    <tr data-order-id="@order.OrderId">
                         <td>@order.OrderId</td>
                         <td>@order.OrderDate?.ToString("yyyy-MM-dd HH:mm")</td>
                         <td>@order.TotalAmount.ToString("C0")</td>
-                        <td>@order.Status</td>
+                        <td class="order-status">@order.Status</td>
                         <td>
                             <a asp-action="OrderDetail" asp-controller="User" asp-route-id="@order.OrderId" class="btn btn-sm btn-primary">Xem chi tiết</a>
                             <button class="btn btn-sm btn-danger cancel-order-btn" data-order-id="@order.OrderId">Hủy</button>
@@ -114,43 +115,51 @@ else
             });
         });
     </script>
-    <script>
-        $(document).ready(function () {
-            // Kết nối SignalR
-            const connection = new signalR.HubConnectionBuilder()
-                .withUrl("/notificationHub")
-                .withAutomaticReconnect()
-                .build();
+<script>
+            $(document).ready(function () {
+                // Kết nối SignalR (theo mẫu)
+                var connection = new signalR.HubConnectionBuilder()
+                    .withUrl("/notificationHub")
+                    .build();
 
-            // Xử lý thông báo và cập nhật trạng thái
-            connection.on("ReceiveOrderNotification", function (data) {
-                console.log("Received SignalR notification:", data);
+                // Xử lý thông báo và cập nhật trạng thái
+                connection.on("ReceiveOrderNotification", function (data) {
+                    console.log("Received SignalR notification:", data);
 
-                // Hiển thị thông báo
-                Swal.fire({
-                    title: 'Thông báo đơn hàng',
-                    text: data.message,
-                    icon: 'success',
-                    confirmButtonText: 'OK'
+                    // Hiển thị thông báo
+                    Swal.fire({
+                        title: 'Thông báo đơn hàng',
+                        text: data.message,
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    });
+
+                    // Cập nhật trạng thái trong bảng
+                    var row = $(`#orderTable tr[data-order-id='${data.orderId}']`);
+                    console.log("Found row for OrderId:", data.orderId, "Row count:", row.length);
+                    if (row.length) {
+                        var statusCell = row.find('.order-status');
+                        if (statusCell.text() !== data.status) {
+                            statusCell.text(data.status);
+                            // Tô sáng để xác nhận cập nhật
+                            row.addClass('table-success').delay(2000).queue(function () {
+                                $(this).removeClass('table-success').dequeue();
+                            });
+                        } else {
+                            console.log("Status unchanged for OrderId:", data.orderId);
+                        }
+                    } else {
+                        console.warn("Row not found for OrderId:", data.orderId);
+                    }
                 });
 
-                // Cập nhật trạng thái trong bảng
-                const row = $(`#orderTable tr[data-order-id='${data.orderId}']`);
-                console.log("Found row:", row.length, "OrderId:", data.orderId);
-                if (row.length) {
-                    row.find('.order-status').text(data.status);
-                } else {
-                    console.warn("Row not found for OrderId:", data.orderId);
-                }
+                // Bắt đầu kết nối
+                connection.start().catch(function (err) {
+                    return console.error("SignalR connection error:", err.toString());
+                }).then(function () {
+                    console.log("SignalR connected successfully");
+                });
             });
-
-            // Bắt đầu kết nối
-            connection.start().then(function () {
-                console.log("SignalR connected successfully");
-            }).catch(function (err) {
-                console.error('SignalR connection error:', err.toString());
-            });
-        });
     </script>
-    </script>
+    
 }

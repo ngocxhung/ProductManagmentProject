@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\1_prn222_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\1_prn222_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\user\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\user\\orderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\1_prn222_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\1_prn222_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|solutionrelative:productmanagmentproject\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9227619-74CA-4498-90CB-6EECD1B580C1}|ProductManagmentProject\\ProductManagmentProject.csproj|d:\\1_prn222_bl5\\productmanagmentproject\\productmanagmentproject\\productmanagmentproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -144,8 +144,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -156,33 +168,23 @@
               "RelativeToolTip": "ProductManagmentProject\\Hubs\\NotificationHub.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T16:50:11.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T16:50:11.984Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ProductManagmentProject",
+              "Title": "ProductManagmentProject.csproj",
               "DocumentMoniker": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject.csproj",
               "RelativeDocumentMoniker": "ProductManagmentProject\\ProductManagmentProject.csproj",
               "ToolTip": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject.csproj",
               "RelativeToolTip": "ProductManagmentProject\\ProductManagmentProject.csproj",
               "ViewState": "AgIAABMAAAAA9BrKayj3vwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-27T16:49:14.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "WhenOpened": "2025-04-27T16:49:14.265Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "OrderController.cs",
               "DocumentMoniker": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Controllers\\OrderController.cs",
@@ -195,13 +197,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\Profile.cshtml",
               "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\User\\Profile.cshtml",
               "ToolTip": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\Profile.cshtml",
               "RelativeToolTip": "ProductManagmentProject\\Views\\User\\Profile.cshtml",
-              "ViewState": "AgIAAH8AAAAAAAAAAADwv5kAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-26T16:05:07.922Z",
               "EditorCaption": ""
@@ -216,8 +218,24 @@
               "RelativeToolTip": "ProductManagmentProject\\Program.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAQwDQAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T06:46:04.718Z",
+              "WhenOpened": "2025-03-14T06:46:04.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderDetail.cshtml",
+              "DocumentMoniker": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "ToolTip": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "RelativeToolTip": "ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvy8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T10:09:41.728Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
@@ -229,21 +247,7 @@
               "RelativeToolTip": "ProductManagmentProject\\Views\\Order\\OrderDetail.cshtml",
               "ViewState": "AgIAADMAAAAAAAAAAAAAADMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T15:42:42.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderDetail.cshtml",
-              "DocumentMoniker": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
-              "RelativeDocumentMoniker": "ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
-              "ToolTip": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
-              "RelativeToolTip": "ProductManagmentProject\\Views\\User\\OrderDetail.cshtml",
-              "ViewState": "AgIAAIUAAAAAAAAAAADwv5YAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T10:09:41.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T15:42:42.535Z"
             },
             {
               "$type": "Document",
@@ -255,8 +259,7 @@
               "RelativeToolTip": "ProductManagmentProject\\Views\\Shared\\_AdminNavButtons.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T16:19:32.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T16:19:32.39Z"
             },
             {
               "$type": "Document",
@@ -563,14 +566,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-14T06:41:55.176Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },

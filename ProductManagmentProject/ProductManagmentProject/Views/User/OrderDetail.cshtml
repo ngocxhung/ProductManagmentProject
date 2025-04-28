@@ -20,7 +20,7 @@
                 <dd class="col-sm-8">@Model.TotalAmount.ToString("C0")</dd>
 
                 <dt class="col-sm-4">Trạng thái:</dt>
-                <dd class="col-sm-8">@Model.Status</dd>
+                <dd class="col-sm-8" id="orderStatus">@Model.Status</dd>
             </dl>
         </div>
     </div>
@@ -45,8 +45,8 @@
                     <tr>
                         <td>@detail.Product.ProductName</td>
                         <td>@detail.Quantity</td>
-                        <td>@detail.Price.ToString("C0")</td>
-                        <td>@(detail.Quantity * detail.Price).ToString("C0")</td>
+                        <td>@detail.Price đ</td>
+                        <td>@(detail.Quantity * detail.Price) đ</td>
                     </tr>
                 }
             </tbody>
@@ -70,7 +70,6 @@ else
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/js/signalr/dist/browser/signalr.js"></script>
-    <script>
     <script>
         $(document).ready(function () {
             $('.cancel-order-btn').click(function () {
@@ -106,20 +105,22 @@ else
                     }
                 });
             });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            // Kết nối SignalR
-            const connection = new signalR.HubConnectionBuilder()
+
+            // Kết nối SignalR (theo mẫu)
+            var connection = new signalR.HubConnectionBuilder()
                 .withUrl("/notificationHub")
-                .withAutomaticReconnect()
                 .build();
 
             // Xử lý thông báo và cập nhật trạng thái
             connection.on("ReceiveOrderNotification", function (data) {
                 console.log("Received SignalR notification:", data);
                 console.log("Current OrderId:", @Model.OrderId);
+
+                // Kiểm tra dữ liệu SignalR
+                if (!data || !data.orderId || !data.status) {
+                    console.warn("Invalid SignalR data:", data);
+                    return;
+                }
 
                 if (data.orderId == @Model.OrderId) {
                     // Hiển thị thông báo
@@ -131,21 +132,31 @@ else
                     });
 
                     // Cập nhật trạng thái
-                    const statusElement = $('#orderStatus');
+                    var statusElement = $('#orderStatus');
                     console.log("Found status element:", statusElement.length);
                     if (statusElement.length) {
-                        statusElement.text(data.status);
+                        if (statusElement.text() !== data.status) {
+                            statusElement.text(data.status);
+                            // Tô sáng để xác nhận cập nhật
+                            statusElement.addClass('text-success').delay(2000).queue(function () {
+                                $(this).removeClass('text-success').dequeue();
+                            });
+                        } else {
+                            console.log("Status unchanged for OrderId:", data.orderId);
+                        }
                     } else {
                         console.warn("Status element not found");
                     }
+                } else {
+                    console.log("OrderId mismatch:", data.orderId, "vs", @Model.OrderId);
                 }
             });
 
             // Bắt đầu kết nối
-            connection.start().then(function () {
+            connection.start().catch(function (err) {
+                return console.error("SignalR connection error:", err.toString());
+            }).then(function () {
                 console.log("SignalR connected successfully");
-            }).catch(function (err) {
-                console.error('SignalR connection error:', err.toString());
             });
         });
     </script>

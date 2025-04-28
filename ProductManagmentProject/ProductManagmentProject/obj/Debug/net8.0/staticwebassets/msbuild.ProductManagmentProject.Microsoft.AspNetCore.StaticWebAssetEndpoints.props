@@ -100,13 +100,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\signalr\dist\browser\signalr.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"49hvrsqvxt"},{"Name":"integrity","Value":"sha256-6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ="},{"Name":"label","Value":"_content/ProductManagmentProject/js/signalr/dist/browser/signalr.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"160402"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 14:17:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"160402"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 12:42:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ProductManagmentProject/js/signalr/dist/browser/signalr.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\signalr\dist\browser\signalr.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"160402"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 14:17:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"160402"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 12:42:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ProductManagmentProject/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
