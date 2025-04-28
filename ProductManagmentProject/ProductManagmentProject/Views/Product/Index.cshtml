@@ -5,6 +5,17 @@
 }
 
 <h2>Danh sách sản phẩm</h2>
+
+<!-- Thêm form tìm kiếm sản phẩm -->
+<form asp-action="Index" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchString" class="form-control" placeholder="Tìm kiếm sản phẩm..." value="@Context.Request.Query["searchString"]" />
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Tìm kiếm</button>
+        </div>
+    </div>
+</form>
+
 <partial name="_AdminNavButtons" />
 
 <a asp-action="Create" class="btn btn-success mb-3">Thêm sản phẩm</a>
@@ -53,3 +64,5 @@
         }
     </tbody>
 </table>
+
+
