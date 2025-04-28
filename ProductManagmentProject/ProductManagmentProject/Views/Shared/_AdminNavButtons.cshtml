@@ -6,11 +6,11 @@
     @if (userRole == "Admin")
     {
         <a asp-action="Create" asp-controller="Product" class="btn btn-success mb-2 me-2">Thêm sản phẩm</a>
-        <a asp-action="AddUser" asp-controller="Admin" class="btn btn-success mb-2 me-2">Add user</a>
-        <a asp-action="ListUser" asp-controller="Admin" class="btn btn-success mb-2 me-2">List user</a>
+        <a asp-action="AddUser" asp-controller="Admin" class="btn btn-success mb-2 me-2">Thêm User</a>
+        <a asp-action="ListUser" asp-controller="Admin" class="btn btn-success mb-2 me-2">Danh Sách user</a>
         <a asp-action="MonthlySales" asp-controller="Admin" class="btn btn-info mb-2 me-2">Thống kê doanh số/Tháng</a>
-        <a asp-action="Index" asp-controller="Product" class="btn btn-primary mb-2 me-2">List product</a>
-        <a asp-action="Orders" asp-controller="Order" class="btn btn-primary mb-2 me-2">List orders</a>
+        <a asp-action="Index" asp-controller="Product" class="btn btn-primary mb-2 me-2">Danh Sách Sản Phẩm</a>
+        <a asp-action="Orders" asp-controller="Order" class="btn btn-primary mb-2 me-2">Danh Sách Đơn Hàng</a>
     }
     else if (userRole == "Staff")
     {
