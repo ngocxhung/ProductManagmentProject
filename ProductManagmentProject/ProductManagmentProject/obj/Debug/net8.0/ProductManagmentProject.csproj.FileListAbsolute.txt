@@ -609,4 +609,7 @@ C:\Users\MinHee\Desktop\Gihub\ProductManagmentProject\ProductManagmentProject\Pr
 D:\1_PRN222_BL5\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\bin\Debug\net8.0\libman.json
 D:\1_PRN222_BL5\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\obj\Debug\net8.0\ProductManagmentProject.sourcelink.json
 D:\PRN222\prn222_project_bl5\ProductManagmentProject\ProductManagmentProject\ProductManagmentProject\bin\Debug\net8.0\libman.json
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

@@ -33,7 +33,7 @@
                 <td>
                     @if (!string.IsNullOrEmpty(product.ImageUrl))
                     {
-                        <img src="@product.ImageUrl" alt="@product.ProductName" width="50" height="50" class="rounded">
+                        <img src="@Url.Content("~/" + product.ImageUrl.TrimStart('/'))" alt="@product.ProductName" width="50" height="50" class="rounded">
                     }
                     else
                     {
