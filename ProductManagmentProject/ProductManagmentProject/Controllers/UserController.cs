@@ -60,7 +60,7 @@ namespace ProductManagmentProject.Controllers
                 _foodManagmentContext.Orders.Add(order);
                 await _foodManagmentContext.SaveChangesAsync();
 
-                return Json(new { success = true, message = "Thanh toán thành công!" });
+                return Json(new { success = true, message = "Tạo đơn hàng thành công!" });
             }
             catch (Exception ex)
             {
