@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UiLMazPBN6WzyytLn8np6dyevU4JqokVezi8jacjNPE=",
+  "Hash": "lKM1QrpcFhyXx2iNjNTTzEm3ixwg+r7SbZy4iVdJ/ws=",
   "Source": "ProductManagmentProject",
   "BasePath": "_content/ProductManagmentProject",
   "Mode": "Default",
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cqu3aupeo3",
-      "Integrity": "rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=",
+      "Fingerprint": "49hvrsqvxt",
+      "Integrity": "6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.js"
@@ -2124,7 +2124,7 @@
       ]
     },
     {
-      "Route": "js/signalr/dist/browser/signalr.cqu3aupeo3.js",
+      "Route": "js/signalr/dist/browser/signalr.49hvrsqvxt.js",
       "AssetFile": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2134,7 +2134,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160262"
+          "Value": "160402"
         },
         {
           "Name": "Content-Type",
@@ -2142,11 +2142,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=\""
+          "Value": "\"6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 10:26:06 GMT"
+          "Value": "Sun, 27 Apr 2025 14:17:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2156,7 +2156,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cqu3aupeo3"
+          "Value": "49hvrsqvxt"
         },
         {
           "Name": "label",
@@ -2164,7 +2164,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA="
+          "Value": "sha256-6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ="
         }
       ]
     },
@@ -2179,7 +2179,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160262"
+          "Value": "160402"
         },
         {
           "Name": "Content-Type",
@@ -2187,11 +2187,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=\""
+          "Value": "\"6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 10:26:06 GMT"
+          "Value": "Sun, 27 Apr 2025 14:17:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2201,7 +2201,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA="
+          "Value": "sha256-6EuF7ZQ7IraO4mAyblsT5rUzaDbApiFXRumXSTfKTGQ="
         }
       ]
     },

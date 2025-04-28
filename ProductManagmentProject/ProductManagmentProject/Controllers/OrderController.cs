@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using ProductManagmentProject.Hubs;
 using ProductManagmentProject.Models;
 
 namespace ProductManagmentProject.Controllers
@@ -8,11 +10,13 @@ namespace ProductManagmentProject.Controllers
     {
         private readonly FoodManagmentContext _foodManagmentContext;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IHubContext<NotificationHub> _hubContext;
 
-        public OrderController(FoodManagmentContext context, IHttpContextAccessor httpContextAccessor)
+        public OrderController(FoodManagmentContext context, IHttpContextAccessor httpContextAccessor, IHubContext<NotificationHub> hubContext)
         {
             _foodManagmentContext = context;
             _httpContextAccessor = httpContextAccessor;
+            _hubContext = hubContext;
         }
 
         public IActionResult Index()
@@ -20,6 +24,7 @@ namespace ProductManagmentProject.Controllers
             return View();
         }
 
+        [Route("/Orders")]
         public async Task<IActionResult> Orders()
         {
             var userRole = _httpContextAccessor.HttpContext?.Session.GetString("UserRole");
@@ -81,18 +86,30 @@ namespace ProductManagmentProject.Controllers
                     return Json(new { success = false, message = "Chỉ có thể duyệt đơn hàng ở trạng thái Pending." });
                 }
 
-                // Kiểm tra dữ liệu hợp lệ
                 if (order.UserId == 0 || order.OrderDate == null)
                 {
                     Console.WriteLine($"Invalid order data: UserId={order.UserId}, OrderDate={order.OrderDate}");
                     return Json(new { success = false, message = "Dữ liệu đơn hàng không hợp lệ." });
                 }
 
-                // Định nghĩa trạng thái hợp lệ
                 const string newStatus = "Approved";
                 order.Status = newStatus;
                 await _foodManagmentContext.SaveChangesAsync();
                 Console.WriteLine($"Order {id} approved successfully.");
+
+                // Gửi thông báo SignalR đến người dùng
+                var notificationData = new
+                {
+                    orderId = order.OrderId,
+                    status = order.Status,
+                    message = $"Đơn hàng #{order.OrderId} của bạn đã được duyệt."
+                };
+                Console.WriteLine($"Sending SignalR notification to UserId: {order.UserId}, Data: {System.Text.Json.JsonSerializer.Serialize(notificationData)}");
+                await _hubContext.Clients.Group(order.UserId.ToString()).SendAsync(
+                    "ReceiveOrderNotification",
+                    notificationData
+                );
+
                 return Json(new { success = true, message = "Đơn hàng đã được duyệt thành công." });
             }
             catch (DbUpdateException ex)

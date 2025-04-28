@@ -75,6 +75,8 @@ else
 </form>
 
 @section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
     <script>
         $(document).ready(function () {
             $('.cancel-order-btn').click(function () {
@@ -111,5 +113,44 @@ else
                 });
             });
         });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Kết nối SignalR
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("/notificationHub")
+                .withAutomaticReconnect()
+                .build();
+
+            // Xử lý thông báo và cập nhật trạng thái
+            connection.on("ReceiveOrderNotification", function (data) {
+                console.log("Received SignalR notification:", data);
+
+                // Hiển thị thông báo
+                Swal.fire({
+                    title: 'Thông báo đơn hàng',
+                    text: data.message,
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+
+                // Cập nhật trạng thái trong bảng
+                const row = $(`#orderTable tr[data-order-id='${data.orderId}']`);
+                console.log("Found row:", row.length, "OrderId:", data.orderId);
+                if (row.length) {
+                    row.find('.order-status').text(data.status);
+                } else {
+                    console.warn("Row not found for OrderId:", data.orderId);
+                }
+            });
+
+            // Bắt đầu kết nối
+            connection.start().then(function () {
+                console.log("SignalR connected successfully");
+            }).catch(function (err) {
+                console.error('SignalR connection error:', err.toString());
+            });
+        });
+    </script>
     </script>
 }

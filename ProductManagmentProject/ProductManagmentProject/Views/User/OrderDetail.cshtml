@@ -68,6 +68,9 @@ else
 </form>
 
 @section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script>
     <script>
         $(document).ready(function () {
             $('.cancel-order-btn').click(function () {
@@ -102,6 +105,47 @@ else
                         });
                     }
                 });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Kết nối SignalR
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("/notificationHub")
+                .withAutomaticReconnect()
+                .build();
+
+            // Xử lý thông báo và cập nhật trạng thái
+            connection.on("ReceiveOrderNotification", function (data) {
+                console.log("Received SignalR notification:", data);
+                console.log("Current OrderId:", @Model.OrderId);
+
+                if (data.orderId == @Model.OrderId) {
+                    // Hiển thị thông báo
+                    Swal.fire({
+                        title: 'Thông báo đơn hàng',
+                        text: data.message,
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    });
+
+                    // Cập nhật trạng thái
+                    const statusElement = $('#orderStatus');
+                    console.log("Found status element:", statusElement.length);
+                    if (statusElement.length) {
+                        statusElement.text(data.status);
+                    } else {
+                        console.warn("Status element not found");
+                    }
+                }
+            });
+
+            // Bắt đầu kết nối
+            connection.start().then(function () {
+                console.log("SignalR connected successfully");
+            }).catch(function (err) {
+                console.error('SignalR connection error:', err.toString());
             });
         });
     </script>

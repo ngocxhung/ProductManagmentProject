@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using ProductManagmentProject.Hubs;
 using ProductManagmentProject.Models;
 
 namespace ProductManagmentProject
@@ -19,6 +20,7 @@ namespace ProductManagmentProject
 
             // Đăng ký Session
             builder.Services.AddSession();
+            builder.Services.AddSignalR();
 
             // Đăng ký IHttpContextAccessor để sử dụng trong view
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -33,6 +35,8 @@ namespace ProductManagmentProject
 
             app.UseStaticFiles();
             app.UseRouting();
+            //Sử dụng SignalR 
+           
 
             // Kích hoạt Session
             app.UseSession();
@@ -46,7 +50,7 @@ namespace ProductManagmentProject
                 }
                 await next();
             });
-
+            app.MapHub<NotificationHub>("/notificationHub");
             app.UseAuthorization();
 
             app.MapControllerRoute(
