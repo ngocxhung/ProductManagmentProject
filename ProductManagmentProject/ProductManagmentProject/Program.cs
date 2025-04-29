@@ -43,11 +43,21 @@ namespace ProductManagmentProject
             app.Use(async (context, next) =>
             {
                 var path = context.Request.Path;
+
+                // Cho phép truy cập không cần đăng nhập vào User/Index
+                if (path.StartsWithSegments("/User/Index"))
+                {
+                    await next();
+                    return;
+                }
+
+                // Kiểm tra đăng nhập cho các trang khác
                 if (!path.StartsWithSegments("/Auth") && string.IsNullOrEmpty(context.Session.GetString("UserEmail")))
                 {
                     context.Response.Redirect("/Auth/Login");
                     return;
                 }
+
                 await next();
             });
             app.MapHub<NotificationHub>("/notificationHub");
@@ -55,7 +65,7 @@ namespace ProductManagmentProject
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=User}/{action=Index}/{id?}");
 
             app.Run();
         }
