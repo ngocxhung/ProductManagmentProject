@@ -34,9 +34,15 @@ namespace ProductManagmentProject.Controllers
                 ViewBag.Error = "Email hoặc mật khẩu không đúng.";
                 return View();
             }
-
-            // Lưu thông tin user vào session
-            HttpContext.Session.SetString("UserEmail", user.Email);
+            else if (user.Status == false)
+            {
+                ViewBag.Error = "Tài khoản của bạn đã bị khóa.";
+                return View();
+            }
+         
+          
+                // Lưu thông tin user vào session
+           HttpContext.Session.SetString("UserEmail", user.Email);
             HttpContext.Session.SetString("UserRole", user.Role);
             HttpContext.Session.SetString("UserId", user.UserId.ToString()); // Store userId in session
 
