@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\10-phan-mem-quan-ly-file-tot-nhat-cho-android.jpg
 wwwroot\images\cheese_burger.jpg
 wwwroot\images\chocolate_cake.jpg
 wwwroot\images\coca_cola.jpg
