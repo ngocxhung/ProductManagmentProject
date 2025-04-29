@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 using ProductManagmentProject.Models;
 
 namespace ProductManagmentProject.Controllers
@@ -244,6 +245,71 @@ namespace ProductManagmentProject.Controllers
             _foodManagmentContext.Users.Update(user);
             await _foodManagmentContext.SaveChangesAsync();
             return RedirectToAction("ListUser");
+        }
+        public async Task<IActionResult> DownloadMonthlySales()
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+            var salesData = await _foodManagmentContext.Orders
+                .Where(o => o.OrderDate.HasValue)
+                .GroupBy(o => new
+                {
+                    Year = o.OrderDate.Value.Year,
+                    Month = o.OrderDate.Value.Month
+                })
+                .Select(g => new
+                {
+                    Year = g.Key.Year,
+                    Month = g.Key.Month,
+                    TotalSales = g.Sum(o => o.TotalAmount),
+                    TopProduct = g.SelectMany(o => o.OrderDetails)
+                                .GroupBy(od => od.ProductId)
+                                .Select(pg => new
+                                {
+                                    ProductName = pg.FirstOrDefault().Product.ProductName,
+                                    TotalQuantity = pg.Sum(od => od.Quantity)
+                                })
+                                .OrderByDescending(pg => pg.TotalQuantity)
+                                .FirstOrDefault()
+                })
+                .OrderByDescending(s => s.Year)
+                .ThenByDescending(s => s.Month)
+                .ToListAsync();
+
+            using (var package = new ExcelPackage())
+            {
+                var worksheet = package.Workbook.Worksheets.Add("MonthlySales");
+
+                // Tạo tiêu đề cột
+                worksheet.Cells[1, 1].Value = "Năm";
+                worksheet.Cells[1, 2].Value = "Tháng";
+                worksheet.Cells[1, 3].Value = "Doanh số (VNĐ)";
+                worksheet.Cells[1, 4].Value = "Sản phẩm bán chạy nhất";
+                worksheet.Cells[1, 5].Value = "Số lượng bán";
+
+                // Đổ dữ liệu vào file Excel
+                int row = 2;
+                foreach (var item in salesData)
+                {
+                    worksheet.Cells[row, 1].Value = item.Year;
+                    worksheet.Cells[row, 2].Value = item.Month;
+                    worksheet.Cells[row, 3].Value = item.TotalSales;
+                    worksheet.Cells[row, 4].Value = item.TopProduct?.ProductName ?? "Không có dữ liệu";
+                    worksheet.Cells[row, 5].Value = item.TopProduct?.TotalQuantity ?? 0;
+                    row++;
+                }
+
+                // Định dạng cột tự động điều chỉnh kích thước
+                worksheet.Cells.AutoFitColumns();
+
+                // Xuất file Excel ra stream
+                var stream = new MemoryStream();
+                package.SaveAs(stream);
+                stream.Position = 0;
+
+                // Trả về file Excel
+                return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "MonthlySales.xlsx");
+            }
         }
     }
 }
