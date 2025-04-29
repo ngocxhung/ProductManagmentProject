@@ -13,6 +13,13 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+<<<<<<< Updated upstream
+=======
+      "Id": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\images\\10-phan-mem-quan-ly-file-tot-nhat-cho-android.jpg",
+      "PackagePath": "staticwebassets\\images\\10-phan-mem-quan-ly-file-tot-nhat-cho-android.jpg"
+    },
+    {
+>>>>>>> Stashed changes
       "Id": "D:\\1_PRN222_BL5\\ProductManagmentProject\\ProductManagmentProject\\ProductManagmentProject\\wwwroot\\images\\cheese_burger.jpg",
       "PackagePath": "staticwebassets\\images\\cheese_burger.jpg"
     },
